@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: url(/src/assets/food-background.jpg);
+    background-repeat: repeat;
+    background-size: 100vw ;
+    font-family: 'Roboto' ;
+}
+.container {
+    background-color: white;
+    opacity: .90;
+    padding: 20px 15px ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.header-title h1{
+    margin-bottom: -15px;
+}
+.form-container form {
+    background-color: #228B22;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form h3 {
+    color: white;
+}
+
+.groceryList {
+  background-color: #228B22;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.listName {
+    color: white;
+}
