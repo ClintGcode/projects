@@ -36,7 +36,16 @@ function App() {
   }
 
   return (
-    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 50) ? 'App warm' : 'App') : 'App'}>
+    <div className={(typeof weather.main !== "undefined") ? ((weather.main.temp > 50) ? 'App warm' : 'App') : 'App'}>
+      {/*Navbar*/}
+      <nav class="nav">
+        <ul id="directory" className="nav">
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="news.asp">News</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+          <li><a href="about.asp">About</a></li>
+        </ul>
+      </nav>
       <main>
 
         {/* Todays Weather */}
@@ -66,7 +75,7 @@ function App() {
         ) : (
           <div className="weather-box">
           <div className="temp">
-            WTHR-APP.
+            WTHR
           </div>
           
         </div>
