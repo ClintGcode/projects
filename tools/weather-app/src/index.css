@@ -87,6 +87,10 @@ input::placeholder {
   color: #ffffff;
 }
 
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
 .location-box .location {
   color: #fff;
   font-size: 32px;
