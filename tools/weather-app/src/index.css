@@ -19,9 +19,10 @@ body {
   transition: 0.4s ease-out;
 }
 .nav {
-  background-color: #282c34;
+  background-color: #0f0e0e;
   display: flex;
   flex-direction: row;
+  color: #ffff;
 }
 
 .nav ul {
@@ -76,11 +77,11 @@ main {
 }
 
 .search-box .search-bar:focus {
-  background-color: #282c34
+  background-color: #282c34;
 }
 
 .search-box .search-bar:hover {
-  background-color: #282c34
+  background-color: #282c34;
 }
 
 input::placeholder {
