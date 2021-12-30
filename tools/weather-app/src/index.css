@@ -1,3 +1,6 @@
+/* Imports */
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +23,17 @@ body {
 }
 .nav {
   background-color: #0f0e0e;
-  display: flex;
-  flex-direction: row;
   color: #ffff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav #logo {
+  margin-right: 2rem;
+  align-items: center;
+  font-family: 'Fredoka One', cursive;
 }
 
 .nav ul {
