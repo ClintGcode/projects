@@ -82,6 +82,7 @@ function App() {
           </li>
         </ul>
         <div id="logo">
+          <h1>{/* get the users current location and replace WTHR in Hero */}</h1>
           <h1>WTHR</h1>
         </div>
       </nav>
