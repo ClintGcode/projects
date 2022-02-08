@@ -23,7 +23,7 @@ class App extends React.Component {
       <div class="App">
         <h1>Craven</h1>
         <SearchBar searchYelp={this.searchYelp} />
-        <h1>Whatcha Craven?</h1>
+        <h1>What'cha Craven?</h1>
         <BusinessList businesses={this.state.businesses} />
       </div>
     );
