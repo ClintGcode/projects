@@ -20,7 +20,13 @@ class Business extends React.Component {
             <h3>{business.category}</h3>
             <h3 className="rating">{business.rating} stars</h3>
             <p>{business.reviewCount} reviews</p>
-            <p class="call-button"><a href={business.phone} >Tel: {business.phone}</a></p>
+            {/* <p class="call-button"><a href={business.phone} >Tel: {business.phone}</a></p> */}
+            <a
+              href="tel:{business.phone}"
+              onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+            >
+              <p class="call-button">{business.phone}</p>
+            </a>
           </div>
         </div>
       </div>
