@@ -1,5 +1,5 @@
-const apiKey =
-  "W4IjmLehBftlnlVP9EnWepXkDZXTH8WlHjwrO7ZUr-FwyzwYjK-9Z5Ljj7axPvLU-8ZSC9SqKEJKuqQWhHKi_CWcYWlehKiWxTQANSKenvhqOPGio-wz6S1abDo3YXYx";
+export const apiKey = process.env.REACT_APP_YELP_API_KEY;
+
 
 const Yelp = {
   searchYelp(term, location, sortBy) {
@@ -27,6 +27,7 @@ const Yelp = {
               category: business.categories[0].title,
               rating: business.rating,
               reviewCount: business.review_count,
+              phone: business.display_phone
             };
           });
         }
