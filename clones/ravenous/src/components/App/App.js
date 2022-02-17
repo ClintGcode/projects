@@ -4,6 +4,9 @@ import "./App.css";
 import SearchBar from "../SearchBar/SearchBar";
 import BusinessList from "../BusinessList/BusinessList";
 import Yelp from "../../util/Yelp";
+import apiKey from "../../util/Yelp";
+
+console.log(apiKey);
 
 class App extends React.Component {
   constructor(props) {

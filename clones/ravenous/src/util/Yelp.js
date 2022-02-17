@@ -1,4 +1,4 @@
-const apiKey = process.env.REACT_APP_YELP_API_KEY;
+export const apiKey = process.env.REACT_APP_YELP_API_KEY;
 
 
 const Yelp = {
@@ -27,6 +27,7 @@ const Yelp = {
               category: business.categories[0].title,
               rating: business.rating,
               reviewCount: business.review_count,
+              phone: business.display_phone
             };
           });
         }
