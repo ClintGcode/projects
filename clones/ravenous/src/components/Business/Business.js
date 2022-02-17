@@ -7,7 +7,7 @@ class Business extends React.Component {
     return (
       <div className="Business">
         <div className="image-container">
-          <img src={business.imageSrc} alt={business.name} />
+          <img id="business-image" src={business.imageSrc} alt={business.name} />
         </div>
         <h2>{business.name}</h2>
         <div className="Business-information">
@@ -20,8 +20,8 @@ class Business extends React.Component {
             <h3>{business.category}</h3>
             <h3 className="rating">{business.rating} stars</h3>
             <p>{business.reviewCount} reviews</p>
-            {/* <p class="call-button"><a href={business.phone} >Tel: {business.phone}</a></p> */}
             <a
+              id="call-link"
               href="tel:{business.phone}"
               onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
             >

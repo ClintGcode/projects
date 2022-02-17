@@ -11,6 +11,10 @@
   margin-bottom: 1rem;
 }
 
+#business-image {
+  filter: sepia(10%) contrast(115%) brightness(105%);
+}
+
 .Business h2 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -49,4 +53,13 @@
 .Business-reviews .rating {
   font-size: 0.88rem;
   line-height: 1rem;
+}
+
+#call-link {
+  color: #0c3b10;
+  font-weight: bold;
+}
+#call-link:hover {
+  color: #cca353;
+  font-weight: bold;
 }
