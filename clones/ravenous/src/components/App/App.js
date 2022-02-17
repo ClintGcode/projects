@@ -4,9 +4,8 @@ import "./App.css";
 import SearchBar from "../SearchBar/SearchBar";
 import BusinessList from "../BusinessList/BusinessList";
 import Yelp from "../../util/Yelp";
-import apiKey from "../../util/Yelp";
 
-console.log(apiKey);
+
 
 class App extends React.Component {
   constructor(props) {
@@ -16,11 +15,26 @@ class App extends React.Component {
     };
     this.searchYelp = this.searchYelp.bind(this);
   }
+  
   searchYelp(term, location, sortBy) {
     Yelp.searchYelp(term, location, sortBy).then((businesses) => {
       this.setState({ businesses: businesses });
     });
   }
+
+  componentDidMount() {
+    if ("geolocation" in navigator) {
+      console.log("Available");
+    } else {
+      console.log("Not Available");
+    }
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+      console.log("Latitude is :", position.coords.latitude);
+      console.log("Longitude is :", position.coords.longitude);
+    });
+  }
+
   render() {
     return (
       <div class="App">
